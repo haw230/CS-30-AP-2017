@@ -12,6 +12,21 @@ void drawBackground() {
   textAlign(LEFT);
   textSize(27);
   text("Name", 90, 35);
-  text("Grades", 245, 35);
-  text("Absences", 365, 35);
+  text("Grades", 320, 35);
+  text("Absences", 450, 35);
+}
+void addStudent() {
+  fill(124, 252, 0);
+  rect(30, 50 + studentCount * 70, 155, 25, 3);
+  fill(0);
+  textSize(20);
+  text("+Add a Student", 30, 70 + studentCount * 70);
+}
+
+void deleteStudent() {
+  fill(179, 58, 58);
+  rect(220, 50 + studentCount * 70, 155, 25, 3);
+  fill(0);
+  textSize(20);
+  text("-Delete Student", 220, 70 + studentCount * 70);
 }
